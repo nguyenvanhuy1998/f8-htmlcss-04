@@ -65,13 +65,14 @@ a {
 }
 
 .btn-primary {
-    color: #fff !important;
-    background: var(--primary-color) !important;
-    border-color: var(--primary-color) !important;
+    color: #fff;
+    background: var(--primary-color);
+    border-color: var(--primary-color)
 }
 
 .btn:hover {
     opacity: 0.9;
+    cursor: pointer;
 }
 
 /* ====================Header=================== */
@@ -183,7 +184,7 @@ a {
     border-radius: 10px;
     width: 250px;
     height: 156px;
-    padding: 20px 14px;
+    padding: 18px 14px;
 
 }
 
@@ -196,11 +197,17 @@ a {
 .hero-list-item__thumb {
     width: 40px;
     height: 40px;
-    background: var(--background, #FEC23F);
+    object-fit: cover;
+    background: #FEC23F;
     border-radius: 10px;
 }
 
+.hero-list-item:nth-of-type(2) .hero-list-item__thumb {
+    background: #C6E2FA;
+}
+
 .hero-list-item__title {
+    font-family: 'Sora', sans-serif;
     font-weight: 600;
     font-size: 1.4rem;
     line-height: 1;
@@ -218,7 +225,11 @@ a {
 
 .hero-list-item__separate {
     margin: 20px 0px;
-    border: 2px solid #F2F2F2;
+    width: 100%;
+    height: 2px;
+    background: #F2F2F2;
+    border-radius: 99px;
+
 }
 
 .hero__content {
@@ -272,8 +283,7 @@ a {
     font-weight: 500;
     font-size: 1.6rem;
     line-height: 1;
-    text-align: center;
-    text-decoration-line: underline;
+    text-decoration: underline;
     color: #000958;
 
 }
