@@ -3,7 +3,7 @@
 }
 
 :root {
-    --primary-color: #FF5B2E
+    --primary-color: #FF5B2E;
 }
 
 html {
@@ -13,4 +13,94 @@ html {
 body {
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
+}
+
+
+/* ====================Common=================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Sora', sans-serif;
+}
+
+/* Để input, textarea, select, button kế thừa lại từ fonts của body */
+input,
+textarea,
+select,
+button {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    --height: 56px;
+    display: inline-block;
+    min-width: 131px;
+    height: var(--height);
+    line-height: var(--height);
+    border: 1px solid rgb(0, 9, 88, 0.7);
+    border-radius: 99px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #000958;
+
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* ====================Common=================== */
+.header {
+    padding: 26px 0;
+}
+
+.fixed {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__link,
+.header-action__link {
+    padding: 8px 18px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #5E6085;
+}
+
+.navbar__link:hover {
+    color: #000958;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header-action__btn {
+    --height: 50px;
+    min-width: 117px
 }
