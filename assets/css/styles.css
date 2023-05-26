@@ -306,12 +306,19 @@ a {
 
 /* ====================About=================== */
 .about {
-    margin-top: 207px;
+    margin-top: 138px;
 }
 
 .about__inner {
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr 1fr;
+}
+
+.about__media {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .about__label {
@@ -365,4 +372,67 @@ a {
     position: absolute;
     top: 2px;
     left: 4px;
+}
+
+.about__card {
+    position: absolute;
+    top: 165px;
+    left: 0;
+    width: 136px;
+    background: #5BD6E2;
+    box-shadow: -15px 26px 48px rgba(85, 240, 255, 0.17);
+    border-radius: 10px;
+    padding: 30px 26px;
+    text-align: center;
+}
+
+.about__card-title {
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 1;
+    color: #FFFFFF;
+}
+
+.about__card-desc {
+    margin-top: 14px;
+    font-size: 1.4rem;
+    line-height: 1.43;
+    color: #C6F4F9;
+}
+
+.about__card-decor {
+    position: absolute;
+    top: -39px;
+    right: -30px;
+}
+
+.about__img-wrap {
+    position: relative;
+    width: 494px;
+}
+
+.about__img-wrap::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 336px;
+    z-index: -1;
+    content: "";
+    background: linear-gradient(180deg, #FCE0EF 0%, #FAC3D1 100%);
+    border-radius: 16px;
+
+}
+
+.about__img {
+    width: 450px;
+    display: block;
+    margin: 0 auto;
+}
+.about__media-decor {
+    position: absolute;
+    top: 157px;
+    right: -50px;
+    z-index: -1;
 }
