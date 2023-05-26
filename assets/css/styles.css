@@ -75,6 +75,20 @@ a {
     cursor: pointer;
 }
 
+.section-heading {
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 1.19;
+    color: #000958;
+}
+
+.section-desc {
+    margin-top: 24px;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #656689;
+}
+
 /* ====================Header=================== */
 .header {
     padding: 26px 0;
@@ -84,6 +98,8 @@ a {
     position: sticky;
     top: 0;
     z-index: 1;
+    background: #FFFAF5;
+
 }
 
 .header__inner {
@@ -286,4 +302,67 @@ a {
     text-decoration: underline;
     color: #000958;
 
+}
+
+/* ====================About=================== */
+.about {
+    margin-top: 207px;
+}
+
+.about__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about__label {
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #5E6085;
+}
+
+.about__heading {
+    margin-top: 15px;
+}
+
+.about__heading,
+.about__desc {
+    width: 444px;
+}
+
+.about__checklist {
+    margin-top: 54px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    gap: 36px;
+}
+
+.about__check-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #48496A;
+}
+
+.about__check-item::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: var(--primary-color);
+    box-shadow: 0px 4px 15px -3px rgba(255, 93, 49, 0.69);
+    border-radius: 4px;
+}
+
+.about__check-item::after {
+    content: url(../icon/about-check.svg);
+    position: absolute;
+    top: 2px;
+    left: 4px;
 }
