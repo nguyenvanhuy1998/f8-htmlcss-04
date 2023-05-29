@@ -50,9 +50,9 @@ a {
 .btn {
     --height: 56px;
     display: inline-flex;
-    display: inline-flex;
     align-items: center;
     justify-content: center;
+    padding: 0 16px;
     min-width: 131px;
     height: var(--height);
     line-height: var(--height);
@@ -97,7 +97,7 @@ a {
 .fixed {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 99;
     background: #FFFAF5;
 
 }
@@ -586,4 +586,128 @@ a {
 .tab__content-more::after {
     opacity: 1;
     height: 1.5px;
+}
+
+/* ====================Service=================== */
+.service {
+    margin-top: 185px;
+    padding: 68px 0 100px;
+    background: #FFF6ED;
+}
+
+.service__top {
+    text-align: center;
+}
+
+.service__desc {
+    font-family: Sora, sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #5E6085;
+    margin-bottom: 15px;
+}
+
+.service__body {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 65px;
+}
+
+.service-item {
+    background: #FFFFFF;
+    border: 2px solid rgba(255, 188, 122, 0.26);
+    border-radius: 10px;
+    padding: 30px 22px 30px 28px;
+    width: 294px;
+}
+
+.service-item+.service-item {
+    margin-top: 24px;
+}
+
+.service-item__heading {
+    position: relative;
+    padding-left: 12px;
+    font-family: Sora, sans-serif;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1;
+    color: #000958;
+
+}
+
+.service-item__heading::before {
+    content: "";
+    width: 2px;
+    border-radius: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, #FF5B2E 100%, #FFA187 100%);
+}
+
+.service-item__desc {
+    margin-top: 18px;
+    font-size: 1.4rem;
+    line-height: 1.71;
+    color: #656689;
+}
+
+.service-item__more {
+    position: relative;
+    font-family: Sora, sans-serif;
+    display: inline-block;
+    margin-top: 24px;
+    padding-right: 16px;
+    font-size: 1.2rem;
+    line-height: 1;
+    color: #34396A;
+}
+
+.service-item__more::after {
+    content: url(../icon/arrow.svg);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.service__media {
+    position: relative;
+    margin-top: 18px;
+}
+
+.service__img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+}
+
+.service__media::after {
+    content: "";
+    position: absolute;
+    left: 22px;
+    right: 15px;
+    bottom: 0;
+    height: 350px;
+    background: linear-gradient(180deg, #9DF1FB 0%, #73D0DB 108.14%);
+    border-radius: 10px;
+}
+
+.service__cta-wrap {
+    margin-top: 45px;
+    text-align: center;
+}
+
+.service__cta {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    min-width: 214px;
+    border: 1px solid #FF5B2E;
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+    background: transparent;
 }
