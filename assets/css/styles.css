@@ -840,9 +840,9 @@ a {
 
 .staff__cta {
     min-width: 193px;
-    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-color: currentColor;
     font-size: 1.6rem;
     font-weight: 500;
-    color: var(--primary-color);
 
 }
