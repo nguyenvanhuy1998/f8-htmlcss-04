@@ -65,9 +65,9 @@ a {
 }
 
 .btn-primary {
-    color: #fff;
-    background: var(--primary-color);
-    border-color: var(--primary-color)
+    color: #fff !important;
+    background: var(--primary-color) !important;
+    border-color: var(--primary-color) !important
 }
 
 .btn:hover {
@@ -853,6 +853,10 @@ a {
     background: #FFF6ED;
 }
 
+.pricing__container {
+    width: 994px;
+}
+
 .pricing__heading,
 .pricing__desc {
     text-align: center;
@@ -923,4 +927,69 @@ a {
     position: absolute;
     right: -112px;
     top: -10px
+}
+
+.pricing__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 56px;
+    column-gap: 44px;
+}
+
+.pricing-item {
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 30px 28px;
+}
+
+.pricing-item__type {
+    font-size: 1.2rem;
+    line-height: 1;
+    color: #FF5B2E;
+}
+
+.pricing-item__heading {
+    margin-top: 8px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #3F4065;
+}
+
+.pricing-item__price {
+    margin-top: 24px;
+    font-family: Sora, sans-serif;
+    font-weight: 700;
+    font-size: 3.3rem;
+    line-height: 1.03;
+    color: #000958;
+}
+
+.pricing-item__btn {
+    --height: 44px;
+    margin-top: 22px;
+    width: 100%;
+    background: transparent;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+}
+
+.pricing-item__list {
+    margin-top: 24px;
+}
+
+.pricing-item__item::before {
+    content: url(../icon/price-check.svg);
+    margin-right: 14px;
+}
+
+.pricing-item__item {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #656689;
 }
