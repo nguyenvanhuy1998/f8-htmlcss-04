@@ -1003,6 +1003,7 @@ a {
 .reviews__inner {
     display: flex;
     align-items: center;
+    column-gap: 44px;
 }
 
 .reviews__control {
@@ -1031,12 +1032,12 @@ a {
 .reviews-item {
     display: flex;
     align-items: center;
+    column-gap: 115px;
 }
 
 .reviews-item__media {
     position: relative;
     flex-shrink: 0;
-    margin-left: 44px;
     margin-top: -56px;
     width: 274px;
     border-radius: 137px;
@@ -1062,12 +1063,6 @@ a {
     border-radius: inherit;
 }
 
-.reviews-item__content {
-    margin-left: 115px;
-    margin-right: 76px;
-
-}
-
 .reviews-item__quote {
     width: 553px;
     margin-top: 24px;
@@ -1079,7 +1074,6 @@ a {
 .reviews-item__author {
     display: flex;
     align-items: center;
-
     margin-top: 34px;
     font-family: Sora, sans-serif;
     font-weight: 600;
