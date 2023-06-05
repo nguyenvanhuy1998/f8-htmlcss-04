@@ -849,6 +849,7 @@ a {
 
 /* Pricing */
 .pricing {
+    margin-top: 130px;
     padding: 86px 0;
     background: #FFF6ED;
 }
