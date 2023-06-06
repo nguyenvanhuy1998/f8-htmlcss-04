@@ -1074,9 +1074,11 @@ a {
     width: 100%;
     border-radius: inherit;
 }
+
 .reviews-item__content {
     margin-top: 28px;
 }
+
 .reviews-item__quote {
     width: 553px;
     margin-top: 24px;
@@ -1128,4 +1130,34 @@ a {
 .reviews__dot:hover {
     background: var(--primary-color);
     cursor: pointer;
+}
+
+/* Blog */
+.blog {
+    padding: 77px 0;
+}
+
+.blog__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog__info {
+    width: 350px;
+    margin-right: 74px;
+}
+
+.blog__desc {
+    margin-top: 0;
+
+}
+
+.blog__cta {
+    margin-top: 24px;
+    min-width: 182px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    border-color: rgba(255, 91, 46, 0.6);
 }
